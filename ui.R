@@ -4,7 +4,8 @@ shinyUI(fluidPage(
   titlePanel("BMI Calculator"),
   p('This application calculates your Body Mass Index according to 
     your weight in kilograms and height in meters and also indicates the World Health
-    Organization category for the encountered BMI.'),
+    Organization category for the encountered BMI.'),  
+  p('code at: http://github.com/rafalohn/PA_DataProducts'),
   hr(),
   fluidRow(
     column(3,offset=3,
@@ -19,6 +20,5 @@ shinyUI(fluidPage(
     h4(textOutput("category"))
     )
   ),
-  plotOutput('plot')
-  
+  plotOutput('plot')  
 ))
